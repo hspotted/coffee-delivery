@@ -1,9 +1,10 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from "react-router-dom"
+import { DefaultLayoutContainer } from "./style"
 
 export function DefaultLayout() {
   return (
-    <div>
+    <DefaultLayoutContainer>
       <Outlet />
-    </div>
+    </DefaultLayoutContainer>
   )
 }
