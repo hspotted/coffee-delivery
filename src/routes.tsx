@@ -1,8 +1,9 @@
-import { DefaultLayout } from "layouts/default"
-import { CheckoutPage } from "pages/checkout"
-import { HomePage } from "pages/home"
-import { SuccessPage } from "pages/success"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from 'react-router-dom'
+
+import { DefaultLayout } from './layouts/default'
+import { CheckoutPage } from './pages/checkout'
+import { HomePage } from './pages/home'
+import { SuccessPage } from './pages/success'
 
 export function Router() {
   return (

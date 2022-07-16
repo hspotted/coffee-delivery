@@ -15,10 +15,10 @@ export const DefaultTheme = {
     'base-input': '#EDEDED',
     'base-card': '#F3F2F2',
     background: '#FAFAFA',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
   },
   fonts: {
     text: "'Roboto'",
-    title: "'Baloo 2'"
-  }
+    title: "'Baloo 2'",
+  },
 }
