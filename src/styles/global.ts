@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors['base-text']};
-
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 130%;
   }
@@ -45,5 +45,21 @@ export const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.colors.purple};
     
     border-radius: 2rem;
+  }
+
+  .title-xl {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 130%;
+  }
+
+  .text-l {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
   }
 `

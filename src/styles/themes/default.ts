@@ -1,3 +1,5 @@
+export type Color = keyof typeof DefaultTheme.colors
+
 export const DefaultTheme = {
   colors: {
     yellow: '#DBAC2C',
