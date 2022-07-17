@@ -47,11 +47,43 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 2rem;
   }
 
+  .title-s {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .title-m {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
   .title-xl {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
+    line-height: 130%;
+  }
+
+  .text-s {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .text-m {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 130%;
   }
 
@@ -61,5 +93,15 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 20px;
     line-height: 130%;
+  }
+
+  .tag {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 130%;
+
+    text-transform: uppercase;
   }
 `

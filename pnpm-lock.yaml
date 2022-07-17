@@ -6,6 +6,7 @@ specifiers:
   '@types/react-dom': ^18.0.6
   '@types/styled-components': ^5.1.25
   '@vitejs/plugin-react': ^2.0.0
+  hashids: ^2.2.10
   immer: ^9.0.15
   phosphor-react: ^1.4.1
   polished: ^4.2.2
@@ -20,6 +21,7 @@ specifiers:
 
 dependencies:
   '@hookform/resolvers': 2.9.6_react-hook-form@7.33.1
+  hashids: 2.2.10
   immer: 9.0.15
   phosphor-react: 1.4.1_react@18.2.0
   polished: 4.2.2
@@ -785,6 +787,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
+
+  /hashids/2.2.10:
+    resolution: {integrity: sha512-nXnYums7F8B5Y+GSThutLPlKMaamW1yjWNZVt0WModiJfdjaDZHnhYTWblS+h1OoBx3yjwiBwxldPP3nIbFSSA==}
+    dev: false
 
   /history/5.3.0:
     resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}

@@ -4,6 +4,7 @@ export const DefaultLayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 9rem;
 
   .container {
     display: flex;
