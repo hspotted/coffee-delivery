@@ -108,7 +108,6 @@ export const ItemQuantityButton = styled.button`
   background: transparent;
   outline: 0;
   border: 0;
-  cursor: pointer !important;
 
   :hover {
     color: ${({ theme }) => theme.colors['purple-dark']};
@@ -122,7 +121,6 @@ export const AddProductButton = styled.button`
   align-items: center;
   padding: 8px;
   gap: 8px;
-  cursor: pointer !important;
 
   width: 38px;
   height: 38px;

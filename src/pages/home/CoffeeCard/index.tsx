@@ -1,5 +1,6 @@
 import { Minus, Plus, ShoppingCart } from 'phosphor-react'
 import { useCallback, useState } from 'react'
+import { useCheckout } from '../../../contexts/checkout-context'
 import { Coffee } from '../../../utils/coffee-list'
 import { formatAsDecimal } from '../../../utils/number'
 import {
@@ -20,17 +21,32 @@ interface CoffeeCardProps {
 }
 
 export function CoffeeCard({ coffee }: CoffeeCardProps) {
-  const [quantity, setQuantity] = useState<number>(1)
+  const { coffees, addProduct, updateProductQuantity } = useCheckout()
+
+  const [quantity, setQuantity] = useState<number>(
+    coffees.find((c) => c.id === coffee.id)?.quantity ?? 1
+  )
 
   const handleDecreaseQuantity = useCallback(() => {
-    setQuantity((prevQuantity) => (quantity === 1 ? 1 : prevQuantity - 1))
-  }, [])
+    setQuantity((prevQuantity) => (prevQuantity === 1 ? 1 : prevQuantity - 1))
+  }, [quantity])
 
   const handleIncreaseQuantity = useCallback(() => {
     setQuantity((prevQuantity) => prevQuantity + 1)
-  }, [])
+  }, [quantity])
 
-  const handleAddProductToCheckout = useCallback(() => {}, [])
+  const handleAddProductToCheckout = useCallback(() => {
+    let existingCoffee = coffees.find((c) => c.id === coffee.id)
+    if (existingCoffee) updateProductQuantity(coffee.id, quantity)
+    else {
+      const newExistingCoffee = {
+        id: coffee.id,
+        quantity: quantity,
+        price: coffee.price
+      }
+      addProduct(newExistingCoffee)
+    }
+  }, [quantity, coffees])
 
   return (
     <CoffeeCardContainer>

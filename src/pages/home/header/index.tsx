@@ -3,7 +3,7 @@ import {
   BulletsContainer,
   HomeHeaderContainer,
   HomeHeaderContent,
-  TitleContainer,
+  TitleContainer
 } from './style'
 
 import CoffeeHeading from '../../../assets/coffee-heading.png'

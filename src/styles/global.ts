@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a { text-decoration: none;}
 
-  button:not(:disabled):hover { cursor: not-allowed; }
+  /* button:not(:disabled):hover { cursor: not-allowed; } */
 
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
